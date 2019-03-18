@@ -1,0 +1,39 @@
+#bg-load {
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.loader {
+    text-indent: -9999em;
+    margin: 88px auto;
+    position: relative;
+    top: 35%;
+    background: url('../images/loader.gif') no-repeat center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 146px;
+    height: 26px;
+}
+label.error {
+    color: #dd4b39;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0px;
+    display: block;
+}
+span.required:before {
+    color: red;
+    content: "*";
+}
+.select2-container .select2-selection--single {
+    height: 34px !important;
+}
+.property-slider-nav img {
+    max-height: 100px !important;
+}
+#map iframe {
+    width: 100% !important;
+}

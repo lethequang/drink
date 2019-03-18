@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tin thuê nhà | Tìm kiếm</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" type='image/x-icon' href="assets/images/favicon.ico">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+</head>
+
+<body class="header-1 page-header-1">
+    <!-- ====== BEGIN HEADER ====== -->
+    <header id="header">
+        <!-- Main Menu Header -->
+        <nav class="navbar navbar-default navbar-fixed-top-1">
+            <div class="container">
+                <!-- Navbar Brand -->
+                <div class="navbar-header">
+                    <a href="./" id="navbar-brand" class="navbar-brand"><img src="assets/images/header-logo-default.png" alt="kensington Property"></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Navbar Menu -->
+                <nav id="navbar" class="navbar navbar-right navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Dropdown Menu -->
+                        <li>
+                            <a  href="#">Tin nổi bật</a>
+                        </li>
+                        <!-- Dropdown Menu -->
+                        <li>
+                            <a  href="#">Nhà đất cho thuê</a>
+                        </li>
+                        <!-- Dropdown Menu -->
+                        <li>
+                            <a  href="#">Nhà đất cần thuê</a>
+                        </li>
+                        <!-- Dropdown Menu -->
+                        <li>
+                            <a  href="#">Tin tức</a>
+                        </li>
+                        <li>
+                            <a  href="#">Phong thủy</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <!-- ====== END HEADER ====== -->
+    
+    <!-- ====== ERROR PAGE ====== -->
+    <section id="page-builder" class="page-section">
+        <!-- HERO IMAGE WITH SEARCH FORM -->
+        <div class="row tpb-row" style="background-image: url(assets/images/home_hero_image_default.jpg); padding-top: 44px; padding-bottom: 68px; margin: 0; background-size: cover; background-position: center;">
+            <div class="tpb tpb-property_simple_search col-md-12">
+                <div class="container">
+                    <!-- Tabmenu Container / Default Bootstrap Structure -->
+                    <div class="search-tabmenu">
+                        <!-- Tabmenu Navigation -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="active"><a href="#for-sale" role="tab" data-toggle="tab"><i class="fi flaticon-sale"></i> Nhà đất cho thuê</a></li>
+                            <li><a href="#for-rent" role="tab" data-toggle="tab"><i class="fi flaticon-rent"></i> Nhà đất cần thuê</a></li>
+                        </ul>
+                        <!-- Tabmenu Body / Content -->
+                        <div class="tab-content">
+                            <!-- Tabmenu Content 1 / Property For SALE -->
+                            <div role="tabpanel" class="tab-pane active" id="for-sale">
+                                <form action="#">
+                                    <div class="form-body">
+                                        <div class="row">
+                                            <div class="col-md-4 form-group">
+                                                <label for="sale-location">Thành Phố</label>
+                                                <select class="form-control" id="sale-location">
+                                                    <option>Chọn Thành Phố</option>
+                                                    <option>Hà Nội</option>
+                                                    <option>Hồ Chí Minh</option>
+                                                    <option>Vĩnh Long</option>
+                                                    <option>Cần Thơ</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <label for="sale-location">Quận/Huyện</label>
+                                                <select class="form-control" id="sale-location">
+                                                    <option>Chọn Quận Huyện</option>
+                                                    <option>Quận 1</option>
+                                                    <option>Quận 2</option>
+                                                    <option>Quận 3</option>
+                                                    <option>Quận 4</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <label for="sale-type">Loại Nhà Cho Thuê</label>
+                                                <select class="form-control" id="sale-type">
+                                                    <option>Loại Nhà Cho Thuê</option>
+                                                    <option>Cho thuê nhà chung cư</option>
+                                                    <option>Cho thuê nhà riêng</option>
+                                                    <option>Cho thuê nhà mặt phố</option>
+                                                    <option>Cho thuê nhà trọ, phòng trọ</option>
+                                                    <option>Cho thuê văn phòng</option>
+                                                    <option>Cho thuê cửa hàng, ki ốt</option>
+                                                    <option>Cho thuê kho, nhà xưởng, đất</option>
+                                                    <option>Cho thuê loại bất động sản khác</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 form-group">
+                                                <label for="sale-range-feet">Diện tích (m2)</label>
+                                                <div class="range-box">
+                                                    <input id="sale-range-feet" readonly="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <label for="sale-range-price">Giá (VNĐ)</label>
+                                                <select class="form-control" id="sale-price">
+                                                    <option>Chọn Giá</option>
+                                                    <option>Thỏa thuận</option>
+                                                    <option> > 1 triệu</option>
+                                                    <option>1 - 3 triệu</option>
+                                                    <option>3 - 5 triệu</option>
+                                                    <option>5 - 10 triệu</option>
+                                                    <option>10 - 40 triệu</option>
+                                                    <option>40 - 70 triệu</option>
+                                                    <option>70 - 100 triệu</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <button class="btn btn-primary pull-right btn-submit" type="submit"><i class="fa fa-search"></i> Tìm Kiếm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="for-rent">
+                                <form action="#">
+                                    <div class="form-body">
+                                        <div class="row">
+                                            <div class="col-md-4 form-group">
+                                                <label for="sale-location">Thành Phố</label>
+                                                <select class="form-control" id="sale-location">
+                                                    <option>Chọn Thành Phố</option>
+                                                    <option>Hà Nội</option>
+                                                    <option>Hồ Chí Minh</option>
+                                                    <option>Vĩnh Long</option>
+                                                    <option>Cần Thơ</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <label for="sale-location">Quận/Huyện</label>
+                                                <select class="form-control" id="sale-location">
+                                                    <option>Chọn Quận Huyện</option>
+                                                    <option>Quận 1</option>
+                                                    <option>Quận 2</option>
+                                                    <option>Quận 3</option>
+                                                    <option>Quận 4</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <label for="sale-type">Loại Nhà Cần Thuê</label>
+                                                <select class="form-control" id="sale-type">
+                                                    <option>Loại Nhà Cho Thuê</option>
+                                                    <option>Cần thuê nhà chung cư</option>
+                                                    <option>Cần thuê nhà riêng</option>
+                                                    <option>Cần thuê nhà mặt phố</option>
+                                                    <option>Cần thuê nhà trọ, phòng trọ</option>
+                                                    <option>Cần thuê văn phòng</option>
+                                                    <option>Cần thuê cửa hàng, ki ốt</option>
+                                                    <option>Cần thuê kho, nhà xưởng, đất</option>
+                                                    <option>Cần thuê loại bất động sản khác</option>
+                                                </select>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 form-group">
+                                                <label for="sale-range-feet">Diện tích (m2)</label>
+                                                <div class="range-box">
+                                                    <input id="sale-range-feet-1" readonly="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <label for="sale-range-price">Giá (VNĐ)</label>
+                                                <select class="form-control" id="sale-price">
+                                                    <option>Chọn Giá</option>
+                                                    <option>Thỏa thuận</option>
+                                                    <option> > 1 triệu</option>
+                                                    <option>1 - 3 triệu</option>
+                                                    <option>3 - 5 triệu</option>
+                                                    <option>5 - 10 triệu</option>
+                                                    <option>10 - 40 triệu</option>
+                                                    <option>40 - 70 triệu</option>
+                                                    <option>70 - 100 triệu</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <button class="btn btn-primary pull-right btn-submit" type="submit"><i class="fa fa-search"></i> Tìm Kiếm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- ====== Banner ====== -->
+    <div class="banner-n margin-t">
+        <a href="#"><img src="assets/images/banner-980x90.jpg" alt=""></a>
+    </div>
+    <section id="property-search-result" class="archive-property">
+        <!-- ====== PAGE CONTENT ====== -->
+        <div class="page-section">
+            <div class="container">
+                <div class="panel filter-panel">
+                    <div class="panel-body">
+                        <h4 class="filter-title pull-left">Tìm được 60 tin</h4>
+                        <form action="#" class="form-inline pull-right">
+                            <div class="form-group">
+                                <label>Sắp xếp:</label>
+                                <select class="form-control">
+                                    <option value="1">Tin mới nhất</option>
+                                    <option value="2">Giá thấp</option>
+                                    <option value="3">Giá cao</option>
+                                    <option value="4">Phổ biến</option>
+                                    <option value="5">Diện tích lớn nhất</option>
+                                    <option value="6">Diện tích nhỏ nhất</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="property-list archive-flex archive-with-footer">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- Property Item -->
+                            <div class="property-item">
+                                <div class="property-heading">
+                                    <span class="item-price">10 triệu / tháng</span>
+                                    <a href="single-property.html" class="item-detail btn"><i class="fi flaticon-detail"></i></a>
+                                </div>
+                                <div class="img-box">
+                                    <div class="property-label">
+                                        <a href="#" class="property-label__type">nhà cho thuê</a>
+                                    </div>
+                                    <a href="single-property.html" class="img-box__image"><img style="background: url(assets/images/7.jpg) center center no-repeat; padding-bottom: 56.25%; height: 0;" src="assets/images/transparent.png" alt="" class="img-responsive"></a>
+                                </div>
+                                <div class="property-content">
+                                    <a href="single-property.html" class="property-title">CHO THUÊ SÀN VĂN PHÒNG TẦNG 3, LÔ GÓC, TOÀ NHÀ GOLDEN PALM - 91 LÊ VĂN LƯƠNG</a>
+                                    <div class="property-address">
+                                        Cầu Giấy, Hà Nội
+                                    </div>
+                                    <div class="property-footer">
+                                        <div class="item-wide"><span class="fi flaticon-wide"></span> 518 m2</div>
+                                        <div class="item-date"><span class="fi flaticon-clock"></span> 22/09/2018</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="prev"></a>
+                    <span class="current">1</span>
+                    <a href="#" class="page">2</a>
+                    <a href="#" class="page">3</a>
+                    <a href="#" class="page">4</a>
+                    <a href="#" class="page">5</a>
+                    <a href="#" class="next"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- ====== Banner ====== -->
+    <div class="banner-n margin-b">
+        <a href="#"><img src="assets/images/banner-980x90.jpg" alt=""></a>
+    </div>
+    <footer id="footer">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <article class="intro">
+                            <h4>TIN THUÊ NHÀ</h4>
+                            <p><a href="#">tinthuenha.net</a> là kênh thông tin thuê nhà hàng đầu tại Việt Nam. Cập nhật các tin bài thuê và cần thuê nóng hổi và nhanh nhất. <BR> Ngoài ra, <a href="#">tinthuenha.net</a> còn cung cấp cho độc giả tất cả các thông tin về mới nhất khu trọ, thuê giá tốt cho công nhân, học sinh, sinh viên, các xu hướng phong thủy, các bạn có cái nhìn tổng quan hơn về thông tin thuê nhà, đất tại Việt Nam.</p>
+                        </article>
+                    </div>
+                    <div class="col-sm-2">
+                        <dl>
+                            <dt>TIN BÀI</dt>
+                            <dd><a href="#">Nhà đất cho thuê</a></dd>
+                            <dd><a href="#">Cần thuê nhà đất</a></dd>
+                            <dd><a href="#">Tin tức</a></dd>
+                            <dd><a href="#">Phong thủy</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-sm-2">
+                        <dl>
+                            <dt>VỀ CHÚNG TÔI</dt>
+                            <dd><a href="#">Giới thiệu</a></dd>
+                            <dd><a href="#">Liên hệ</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-sm-3">
+                        <article class="art-fanpage">
+                            <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container clearfix">
+                <p>Copyright &copy; 2018 - All Rights Reserved By tinthuenha </p>
+                <ul class="list-social">
+                    <li><a class="btn-floating btn-large btn-fb"><i class="fa fa-facebook"></i></a></li>
+                    <li><a type="button" class="btn-floating btn-large btn-tw"><i class="fa fa-twitter"></i></a></li>
+                    <li><a type="button" class="btn-floating btn-large btn-gplus"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a type="button" class="btn-floating btn-large btn-email"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.daterangepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript" src="assets/js/apps.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.magnific-popup.js"></script>
+</body>
+
+</html>
